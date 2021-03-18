@@ -63,27 +63,27 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:デ ニ ス\n'
-            + 'ORG:Owner Dns Bot;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6285866295942:+62 858-66295-942\n'
+            + 'FN :JODOHMU\n'
+            + 'ORG:Owner OnlyDev Bot;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6282313021398:+6282313021398\n'
             + 'END:VCARD'
        
 const vcard1 = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Caca Cans\n'
-            + 'ORG:Co Owner Dns Bot;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6285876210829:+62 858-76210-829\n'
+            + 'FN:JODOHMU\n'
+            + 'ORG:Co Owner OnlyDev Bot;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6282313021398:+62 823-1302-1398\n'
             + 'END:VCARD'
 
 prefix = "#"
-name = "DNS BOT"
-rdaftar = "@denssptraa"
-rmenu = "@denssptraa"
-botinfo = "@denssptraa"
+name = "ONLY DEV BTR"
+rdaftar = "SELAMAT ANDA SUDAH TERDAFTAR"
+rmenu = "ONLY DEV BTR VERIFIED✅"
+botinfo = "@Sadboy.edtz"
 limitt = 999999999
-memberLimit = 10
+memberLimit = 0
 ban = []
-premium = ["6285866295942@s.whatsapp.net","6285876210829@s.whatsapp.net"]
+premium = ["6282313021398@s.whatsapp.net","62895412691100@s.whatsapp.net"]
 
 function kyun(seconds){
   function pad(s){
@@ -194,7 +194,7 @@ async function starts() {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const DnsBot = ["6285866295942@s.whatsapp.net"] // ubah aja gapapa
+			const DnsBot = ["6282313021398@s.whatsapp.net"] // ubah aja gapapa
 			const farhan = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
@@ -238,7 +238,7 @@ async function starts() {
 			}
 
 			const botNumber = denz.user.jid
-			const ownerNumber = ["6285866295942@s.whatsapp.net","6285876210829@s.whataapp.net"] // owner number ubah aja
+			const ownerNumber = ["6282313021398@s.whatsapp.net","6285876210829@s.whataapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await denz.groupMetadata(from) : ''
@@ -315,7 +315,7 @@ async function starts() {
 		denz.updatePresence(from, Presence.composing)
 					}, 10)
 		setTimeout( () => {
-		reply(`ᴍᴀᴀғ ᴅɴꜱ ʙᴏᴛ ꜱᴇɢᴇʀᴀ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴏᴜᴘ *${groupMetadata.subject}*`)
+		reply(`ᴍᴀᴀғ ONLY DEV BTR ʙᴏᴛ ꜱᴇɢᴇʀᴀ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴏᴜᴘ *${groupMetadata.subject}*`)
 		}, 0)
 		}
 					
@@ -396,12 +396,12 @@ denz.sendMessage(from, hasil, text, {quoted: { key: { fromMe: false, participant
 				case 'menu':
 			if (isBanned) return reply(mess.only.benned)
 			if (!isUser) return reply(mess.only.userB)
-				dmenu = `╓───「 *_ᴅɴꜱ ʙᴏᴛ_* 」
-║wa.me/6285866295942
+				dmenu = `╓───「 *_ONLY DEV BTR_* 」
+║wa.me/6282313021398
 ╙───々
 ╓───「 *_ʙᴏᴛ ɪɴғᴏ_* 」
-║❏ ᴄʀᴇᴀᴛᴏʀ: ғxᴄ7 ғᴀʀʜᴀɴ
-║❏ ʀᴇᴄᴏᴅᴇ ʙʏ: ᴅɴꜱ ᴛᴇᴀᴍ
+║❏ ᴄʀᴇᴀᴛᴏʀ: Mr.Three Four One
+║❏ ʀᴇᴄᴏᴅᴇ ʙʏ: OnlyDev Team 
 ║❏ ᴘʀᴇғɪx: ${prefix}
 ║❏ ᴜꜱᴇʀ ᴛᴇʀᴅᴀғᴛᴀʀ: ${user.length}
 ╙───々
@@ -815,8 +815,8 @@ denz.sendMessage(from, hasil, text, {quoted: { key: { fromMe: false, participant
 ║❏ ${prefix}ᴄʟᴏɴᴇ
 ║❏ ${prefix}ʟᴇᴀᴠᴇ
 ╙───々
-╓───「 *_ᴅɴs ʙᴏᴛ_* 」
-║github.com/denisputraa/dnsbot
+╓───「 *_ONLY DEV BTR_* 」
+║UDAH GW HAPUS WKWKWK
 ╙───々`
 brando = await getBuffer(`https://pencarikode.xyz/api/cita-cita?apikey=pais`, {method: 'get'})                
 denz.sendMessage(from, dmenu, text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "kasian ga ada gambar :v anker-danendra-dennis #kamwan", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('dnsnew.jpg')}}}})
